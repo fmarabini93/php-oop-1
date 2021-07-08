@@ -8,13 +8,18 @@
         public $duration;
         public $upload_date;
         
-        function __construct($title, $overview, $original_lang, $genre, $duration){
+        function __construct($title, $overview, $original_lang, $genre, $duration, $upload_date = ""){
             $this->title = $title;
             $this->overview = $overview;
             $this->original_lang = $original_lang;
             $this->genre = $genre;
             $this->duration = $duration;
-            $this->upload_date = $this->getDate();
+            if ($upload_date <> "") {
+                $this->upload_date = $upload_date;
+            }
+            else {
+                $this->upload_date = $this->getDate();
+            }
         }
 
         function getDate() {
@@ -22,7 +27,7 @@
         }
     }
     
-    $wonder_woman = new Movie($films[0]["title"], $films[0]["overview"], $films[0]["original_lang"], $films[0]["genre"], $films[0]["duration"]);
+    $wonder_woman = new Movie($films[0]["title"], $films[0]["overview"], $films[0]["original_lang"], $films[0]["genre"], $films[0]["duration"], "09-12-2001");
     $luca = new Movie($films[1]["title"], $films[1]["overview"], $films[1]["original_lang"], $films[1]["genre"], $films[1]["duration"]);
     $mortal_kombat = new Movie($films[2]["title"], $films[2]["overview"], $films[2]["original_lang"], $films[2]["genre"], $films[2]["duration"]);
     $the_simpsons = new Movie($films[3]["title"], $films[3]["overview"], $films[3]["original_lang"], $films[3]["genre"], $films[3]["duration"]);
