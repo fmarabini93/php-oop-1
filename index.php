@@ -1,5 +1,5 @@
 <?php
-    include 'database.php';
+    include 'db/database.php';
     class Movie {
         public $title;
         public $overview;
@@ -40,53 +40,65 @@
     </head>
     <body>
         <div class="container">
-            <div class="card">
-                <h2><?= $wonder_woman->title ?></h2>
-                <p><?= $wonder_woman->overview?></p>
-                <small><i><?= $wonder_woman->original_lang ?></i></small><br>
-                <small><b><i><?= $wonder_woman->genre ?></i></b></small><br>
-                <small><i><?= $wonder_woman->duration ?></i></small><br>
-                <small>Uploaded on: <b><i><?= $wonder_woman->getDate() ?></i></b></small>
+            <div class="card" style="background-image: url('img/0.jpg');">
+                <div class="layover hidden">
+                    <h2><?= $wonder_woman->title ?></h2>
+                    <p><?= $wonder_woman->overview?></p>
+                    <small><i><?= $wonder_woman->original_lang ?></i></small><br>
+                    <small><b><i><?= $wonder_woman->genre ?></i></b></small><br>
+                    <small><i><?= $wonder_woman->duration ?></i></small><br>
+                    <small>Uploaded on: <b><i><?= $wonder_woman->getDate() ?></i></b></small>
+                </div>
             </div>
-            <div class="card">
-                <h2><?= $luca->title ?></h2>
-                <p><?= $luca->overview?></p>
-                <small><i><?= $luca->original_lang ?></i></small><br>
-                <small><b><i><?= $luca->genre ?></i></b></small><br>
-                <small><i><?= $luca->duration ?></i></small><br>
-                <small>Uploaded on: <b><i><?= $luca->getDate() ?></i></b></small>
+            <div class="card" style="background-image: url('img/1.jpg');">
+                <div class="layover hidden">
+                    <h2><?= $luca->title ?></h2>
+                    <p><?= $luca->overview?></p>
+                    <small><i><?= $luca->original_lang ?></i></small><br>
+                    <small><b><i><?= $luca->genre ?></i></b></small><br>
+                    <small><i><?= $luca->duration ?></i></small><br>
+                    <small>Uploaded on: <b><i><?= $luca->getDate() ?></i></b></small>
+                </div>
             </div>
-            <div class="card">
-                <h2><?= $mortal_kombat->title ?></h2>
-                <p><?= $mortal_kombat->overview?></p>
-                <small><i><?= $mortal_kombat->original_lang ?></i></small><br>
-                <small><b><i><?= $mortal_kombat->genre ?></i></b></small><br>
-                <small><i><?= $mortal_kombat->duration ?></i></small><br>
-                <small>Uploaded on: <b><i><?= $mortal_kombat->getDate() ?></i></b></small>
+            <div class="card" style="background-image: url('img/2.jpg');">
+                <div class="layover hidden">
+                    <h2><?= $mortal_kombat->title ?></h2>
+                    <p><?= $mortal_kombat->overview?></p>
+                    <small><i><?= $mortal_kombat->original_lang ?></i></small><br>
+                    <small><b><i><?= $mortal_kombat->genre ?></i></b></small><br>
+                    <small><i><?= $mortal_kombat->duration ?></i></small><br>
+                    <small>Uploaded on: <b><i><?= $mortal_kombat->getDate() ?></i></b></small>
+                </div>
             </div>
-            <div class="card">
-                <h2><?= $the_simpsons->title ?></h2>
-                <p><?= $the_simpsons->overview?></p>
-                <small><i><?= $the_simpsons->original_lang ?></i></small><br>
-                <small><b><i><?= $the_simpsons->genre ?></i></b></small><br>
-                <small><i><?= $the_simpsons->duration ?></i></small><br>
-                <small>Uploaded on: <b><i><?= $the_simpsons->getDate() ?></i></b></small>
+            <div class="card" style="background-image: url('img/3.jpg');">
+                <div class="layover hidden">
+                    <h2><?= $the_simpsons->title ?></h2>
+                    <p><?= $the_simpsons->overview?></p>
+                    <small><i><?= $the_simpsons->original_lang ?></i></small><br>
+                    <small><b><i><?= $the_simpsons->genre ?></i></b></small><br>
+                    <small><i><?= $the_simpsons->duration ?></i></small><br>
+                    <small>Uploaded on: <b><i><?= $the_simpsons->getDate() ?></i></b></small>
+                </div>
             </div>
-            <div class="card">
-                <h2><?= $lucifer->title ?></h2>
-                <p><?= $lucifer->overview?></p>
-                <small><i><?= $lucifer->original_lang ?></i></small><br>
-                <small><b><i><?= $lucifer->genre ?></i></b></small><br>
-                <small><i><?= $lucifer->duration ?></i></small><br>
-                <small>Uploaded on: <b><i><?= $lucifer->getDate() ?></i></b></small>
+            <div class="card" style="background-image: url('img/4.jpg');">
+                <div class="layover hidden">
+                    <h2><?= $lucifer->title ?></h2>
+                    <p><?= $lucifer->overview?></p>
+                    <small><i><?= $lucifer->original_lang ?></i></small><br>
+                    <small><b><i><?= $lucifer->genre ?></i></b></small><br>
+                    <small><i><?= $lucifer->duration ?></i></small><br>
+                    <small>Uploaded on: <b><i><?= $lucifer->getDate() ?></i></b></small>
+                </div>
             </div>
-            <div class="card">
-                <h2><?= $need_for_speed->title ?></h2>
-                <p><?= $need_for_speed->overview?></p>
-                <small><i><?= $need_for_speed->original_lang ?></i></small><br>
-                <small><b><i><?= $need_for_speed->genre ?></i></b></small><br>
-                <small><i><?= $need_for_speed->duration ?></i></small><br>
-                <small>Uploaded on: <b><i><?= $need_for_speed->getDate() ?></i></b></small>
+            <div class="card" style="background-image: url('img/5.jpg');">
+                <div class="layover hidden">
+                    <h2><?= $need_for_speed->title ?></h2>
+                    <p><?= $need_for_speed->overview?></p>
+                    <small><i><?= $need_for_speed->original_lang ?></i></small><br>
+                    <small><b><i><?= $need_for_speed->genre ?></i></b></small><br>
+                    <small><i><?= $need_for_speed->duration ?></i></small><br>
+                    <small>Uploaded on: <b><i><?= $need_for_speed->getDate() ?></i></b></small>
+                </div>
             </div>
         </div>
     </body>
