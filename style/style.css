@@ -6,6 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Quicksand', sans-serif;
     background-image: linear-gradient(to top right, #22c1c3, #fdbb2d);
 }
 
@@ -33,6 +34,7 @@ body {
 .card:hover .hidden{
     opacity: 1;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .layover {

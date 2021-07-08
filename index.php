@@ -14,6 +14,7 @@
             $this->original_lang = $original_lang;
             $this->genre = $genre;
             $this->duration = $duration;
+            $this->upload_date = $this->getDate();
         }
 
         function getDate() {
@@ -35,6 +36,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="style/style.css">
         <title>PHP-OOP-1</title>
     </head>
@@ -47,7 +51,7 @@
                     <small><i><?= $wonder_woman->original_lang ?></i></small><br>
                     <small><b><i><?= $wonder_woman->genre ?></i></b></small><br>
                     <small><i><?= $wonder_woman->duration ?></i></small><br>
-                    <small>Uploaded on: <b><i><?= $wonder_woman->getDate() ?></i></b></small>
+                    <small>Uploaded on: <b><i><?= $wonder_woman->upload_date ?></i></b></small>
                 </div>
             </div>
             <div class="card" style="background-image: url('img/1.jpg');">
@@ -57,7 +61,7 @@
                     <small><i><?= $luca->original_lang ?></i></small><br>
                     <small><b><i><?= $luca->genre ?></i></b></small><br>
                     <small><i><?= $luca->duration ?></i></small><br>
-                    <small>Uploaded on: <b><i><?= $luca->getDate() ?></i></b></small>
+                    <small>Uploaded on: <b><i><?= $luca->upload_date ?></i></b></small>
                 </div>
             </div>
             <div class="card" style="background-image: url('img/2.jpg');">
@@ -67,7 +71,7 @@
                     <small><i><?= $mortal_kombat->original_lang ?></i></small><br>
                     <small><b><i><?= $mortal_kombat->genre ?></i></b></small><br>
                     <small><i><?= $mortal_kombat->duration ?></i></small><br>
-                    <small>Uploaded on: <b><i><?= $mortal_kombat->getDate() ?></i></b></small>
+                    <small>Uploaded on: <b><i><?= $mortal_kombat->upload_date ?></i></b></small>
                 </div>
             </div>
             <div class="card" style="background-image: url('img/3.jpg');">
@@ -77,7 +81,7 @@
                     <small><i><?= $the_simpsons->original_lang ?></i></small><br>
                     <small><b><i><?= $the_simpsons->genre ?></i></b></small><br>
                     <small><i><?= $the_simpsons->duration ?></i></small><br>
-                    <small>Uploaded on: <b><i><?= $the_simpsons->getDate() ?></i></b></small>
+                    <small>Uploaded on: <b><i><?= $the_simpsons->upload_date ?></i></b></small>
                 </div>
             </div>
             <div class="card" style="background-image: url('img/4.jpg');">
@@ -87,7 +91,7 @@
                     <small><i><?= $lucifer->original_lang ?></i></small><br>
                     <small><b><i><?= $lucifer->genre ?></i></b></small><br>
                     <small><i><?= $lucifer->duration ?></i></small><br>
-                    <small>Uploaded on: <b><i><?= $lucifer->getDate() ?></i></b></small>
+                    <small>Uploaded on: <b><i><?= $lucifer->upload_date ?></i></b></small>
                 </div>
             </div>
             <div class="card" style="background-image: url('img/5.jpg');">
@@ -97,7 +101,7 @@
                     <small><i><?= $need_for_speed->original_lang ?></i></small><br>
                     <small><b><i><?= $need_for_speed->genre ?></i></b></small><br>
                     <small><i><?= $need_for_speed->duration ?></i></small><br>
-                    <small>Uploaded on: <b><i><?= $need_for_speed->getDate() ?></i></b></small>
+                    <small>Uploaded on: <b><i><?= $need_for_speed->upload_date ?></i></b></small>
                 </div>
             </div>
         </div>
