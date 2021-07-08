@@ -25,7 +25,9 @@ body {
     float: left;
     position: relative;
     margin: 10px;
+    border-radius: 5px;
     box-shadow: 10px 10px 10px #494949;
+    overflow: hidden;
     text-align: center;
     color: #ffffff;
     background-size: cover;
@@ -49,6 +51,7 @@ body {
     padding: 20%;
     background-color: rgba(0, 0, 0, 0.7);
 }
+
 .hidden {
     opacity: 0;
 }
