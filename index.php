@@ -28,11 +28,11 @@
     }
     
     $wonder_woman = new Movie($films[0]["title"], $films[0]["overview"], $films[0]["original_lang"], $films[0]["genre"], $films[0]["duration"], "09-12-2001");
-    $luca = new Movie($films[1]["title"], $films[1]["overview"], $films[1]["original_lang"], $films[1]["genre"], $films[1]["duration"]);
+    $luca = new Movie($films[1]["title"], $films[1]["overview"], $films[1]["original_lang"], $films[1]["genre"], $films[1]["duration"], "09-08-2018");
     $mortal_kombat = new Movie($films[2]["title"], $films[2]["overview"], $films[2]["original_lang"], $films[2]["genre"], $films[2]["duration"]);
-    $the_simpsons = new Movie($films[3]["title"], $films[3]["overview"], $films[3]["original_lang"], $films[3]["genre"], $films[3]["duration"]);
+    $the_simpsons = new Movie($films[3]["title"], $films[3]["overview"], $films[3]["original_lang"], $films[3]["genre"], $films[3]["duration"], "12-07-2004");
     $lucifer = new Movie($films[4]["title"], $films[4]["overview"], $films[4]["original_lang"], $films[4]["genre"], $films[4]["duration"]);
-    $need_for_speed = new Movie($films[5]["title"], $films[5]["overview"], $films[5]["original_lang"], $films[5]["genre"], $films[5]["duration"]);
+    $need_for_speed = new Movie($films[5]["title"], $films[5]["overview"], $films[5]["original_lang"], $films[5]["genre"], $films[5]["duration"], "01-05-2013");
 ?>
 
 <!DOCTYPE html>
