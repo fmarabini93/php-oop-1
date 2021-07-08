@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top right, #22c1c3, #fdbb2d);
+}
+
+.container {
+    width: 1200px;
+}
+.container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.card {
+    width: calc(100% / 3 - 80px);
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px #494949;
+    text-align: center;
+    color: #ac3f00;
+}
